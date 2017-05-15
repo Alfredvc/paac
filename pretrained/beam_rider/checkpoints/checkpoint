@@ -1,0 +1,2 @@
+model_checkpoint_path: "optimizer_checkpoints-80000000"
+all_model_checkpoint_paths: "optimizer_checkpoints-80000000"
