@@ -75,7 +75,8 @@ The paper has been accepted as a poster to [The Multi-disciplinary Conference on
 # Disclaimer
 The code in this repository is _not_ the code used to generate the results from the paper, but should give similar results.
 Some changes have been made:
-* Gradient clipping value changed from 40.0 to 3.0.
-* Entropy regularization constant changed from 0.01 to 0.02.
+* Gradient clipping default value changed from 40.0 to 3.0.
+* Entropy regularization constant default changed from 0.01 to 0.02.
+* Using OpenAI Gym results in an increase in training time of 33%. This is because converting the image from RGB to Grayscale in python is slow.
 
 
