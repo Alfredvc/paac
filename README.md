@@ -1,5 +1,5 @@
 # Efficient Parallel Methods for Deep Reinforcement Learning
-This repository contains an open source implementation of the PAAC algorithm presented in ```Efficient Parallel Methods for Deep Reinforcement Learning```.
+This repository contains an open source implementation of the PAAC algorithm presented in [Efficient Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1705.04862).
 
 ![breakout gif](readme_files/breakout_2x.gif "Breakout")
 ![pong gif](readme_files/pong_2x.gif "Pong")
@@ -67,7 +67,7 @@ Then create a new class that inherits from both the ```PolicyVNetwork``` and```Y
 
 # Citing PAAC
 If you use PAAC in your research, we ask that you please cite our paper:
-<<arxiv link>>
+(citation to come)
 
 The paper has been accepted as a poster to [The Multi-disciplinary Conference on Reinforcement Learning and Decision Making](http://rldm.org/) (citation to come).
 
