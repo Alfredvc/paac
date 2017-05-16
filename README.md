@@ -12,9 +12,9 @@ Pretrained models for some games can be found [here](pretrained).
 These models can be used as starting points for training on the same game, other games, or to generate gifs.
 
 # Runing via docker (recommended)
-* Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
-* Clone this repository
-* Then run the container with ```nvidia-docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale bash```.
+1. Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
+2. Clone this repository
+3. Run the container with ```nvidia-docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale bash```.
 
 A CPU version of the docker container is also provided and can be run with ```docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale:cpu bash```.
 When running on the CPU pass the device flag ```-d '/cpu:0'``` to the training script.
