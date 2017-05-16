@@ -11,9 +11,6 @@ PAAC is a conceptually simple advantage actor-critic algorithm designed to run e
 Pretrained models for some games can be found [here](pretrained).
 These models can be used as starting points for training on the same game, other games, or to generate gifs.
 
-# Atari Roms
-In order to use this code you must download the atari roms you desire (can easily be found with a google search), and place them in a folder named ```atari_roms```.
-
 # Runing via docker (recommended)
 * Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
 * Clone this repository
