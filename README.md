@@ -1,5 +1,6 @@
 # Efficient Parallel Methods for Deep Reinforcement Learning
 This repository contains an open source implementation of the PAAC algorithm presented in [Efficient Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1705.04862).
+PAAC is a conceptually simple advantage actor-critic algorithm designed to run efficiently on a GPU.
 
 ![breakout gif](readme_files/breakout_2x.gif "Breakout")
 ![pong gif](readme_files/pong_2x.gif "Pong")
@@ -9,6 +10,9 @@ This repository contains an open source implementation of the PAAC algorithm pre
 # Pretrained models
 Pretrained models for some games can be found [here](pretrained).
 These models can be used as starting points for training on the same game, other games, or to generate gifs.
+
+# Atari Roms
+In order to use this code you must download the atari roms you desire (can easily be found with a google search), and place them in a folder named ```atari_roms```.
 
 # Runing via docker (recommended)
 * Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
