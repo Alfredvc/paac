@@ -34,7 +34,7 @@ For pong, the agent will begin to learn after about 5 million frames, and will l
 Training can be stopped, for example by using Ctrl+c, and then resumed again by running ```python3 train.py -g pong -df logs/```.
 
 On a setup with an [Intel i7-4790k](http://ark.intel.com/products/80807/Intel-Core-i7-4790K-Processor-8M-Cache-up-to-4_40-GHz) CPU and an [Nvidia GTX 980 Ti](http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-980-ti) GPU with default settings, you can expect around 3000 timesteps (global steps) per second.
-Training for 80000000 timesteps requires under 8 hours.
+Training for 80 million timesteps requires under 8 hours.
 
 Qbert
 
@@ -42,7 +42,7 @@ Qbert
 
 ## Visualizing training
 1. Open a new terminal
-2. Attach to the running docker container with ```nvidia-docker exec -it CONTAINER_NAME bash```
+2. Attach to the running docker container with ```docker exec -it CONTAINER_NAME bash```
 3. Run ```tensorboard --logdir=<absolute-path>/paac/logs/tf```.
 4. In your browser navigate to localhost:6006/
 
