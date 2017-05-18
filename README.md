@@ -1,15 +1,12 @@
 # Efficient Parallel Methods for Deep Reinforcement Learning
 This repository contains an open source implementation of the PAAC algorithm presented in [Efficient Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1705.04862).
+
 PAAC is a conceptually simple advantage actor-critic algorithm designed to run efficiently on a GPU, offering A3C like performance in under 12 hours of training.
 
 ![breakout gif](readme_files/breakout_2x.gif "Breakout")
 ![pong gif](readme_files/pong_2x.gif "Pong")
 ![qbert gif](readme_files/qbert_2x.gif "Qbert")
 ![space invaders gif](readme_files/space_invaders_2x.gif "Space invaders")
-
-# Pretrained models
-Pretrained models for some games can be found [here](pretrained).
-These models can be used as starting points for training on the same game, other games, or to generate gifs.
 
 # Runing via docker (recommended)
 1. Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
@@ -53,6 +50,10 @@ If running locally, skip step 2.
 
 # Testing the agent
 To test the performance of a trained agent run ```python3 test.py -f logs/```
+
+# Pretrained models
+Pretrained models for some games can be found [here](pretrained).
+These models can be used as starting points for training on the same game, other games, or to generate gifs.
 
 # Adapting the code
 This codebase was designed to be easily modified to new environments and new neural network architectures.
