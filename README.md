@@ -1,6 +1,6 @@
 # Efficient Parallel Methods for Deep Reinforcement Learning
 This repository contains an open source implementation of the PAAC algorithm presented in [Efficient Parallel Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1705.04862).
-PAAC is a conceptually simple advantage actor-critic algorithm designed to run efficiently on a GPU.
+PAAC is a conceptually simple advantage actor-critic algorithm designed to run efficiently on a GPU, offering A3C like performance in under 12 hours of training.
 
 ![breakout gif](readme_files/breakout_2x.gif "Breakout")
 ![pong gif](readme_files/pong_2x.gif "Pong")
@@ -68,7 +68,22 @@ Then create a new class that inherits from both the ```PolicyVNetwork``` and```Y
 
 # Citing PAAC
 If you use PAAC in your research, we ask that you please cite our paper:
-(citation to come)
+```
+@ARTICLE{2017arXiv170504862C,
+   author = {{Clemente}, A.~V. and {Castej{\'o}n}, H.~N. and {Chandra}, A.
+	},
+    title = "{Efficient Parallel Methods for Deep Reinforcement Learning}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1705.04862},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning},
+     year = 2017,
+    month = may,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170504862C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
 
 The paper has been accepted as a poster to [The Multi-disciplinary Conference on Reinforcement Learning and Decision Making](http://rldm.org/) (citation to come).
 
