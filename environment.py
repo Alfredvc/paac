@@ -24,6 +24,13 @@ class BaseEnvironment(object):
         """
         raise NotImplementedError()
 
+    def get_noop(self):
+        """
+        Gets the no-op action, to be used with self.next
+        :return: the action
+        """
+        raise NotImplementedError()
+
     def on_new_frame(self, frame):
         """
         Called whenever a new frame is available.

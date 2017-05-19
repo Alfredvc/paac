@@ -113,3 +113,6 @@ class AtariEmulator(BaseEnvironment):
 
     def __is_over(self):
         return self.ale.game_over()
+
+    def get_noop(self):
+        return [1.0, 0.0]

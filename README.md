@@ -11,9 +11,9 @@ PAAC is a conceptually simple advantage actor-critic algorithm designed to run e
 # Runing via docker (recommended)
 1. Follow the instructions to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/)
 2. Clone this repository
-3. Run the container with ```nvidia-docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale bash```.
+3. Run the container with ```nvidia-docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale```.
 
-A CPU version of the docker container is also provided and can be run with ```docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale:cpu bash```.
+A CPU version of the docker container is also provided and can be run with ```docker run -it -v <absolute-path>/paac:/root/paac -p 6006:6006 alfredvc/tf1-ale:cpu```.
 When running on the CPU pass the device flag ```-d '/cpu:0'``` to the training script.
 
 # Runing locally
@@ -49,7 +49,22 @@ Qbert
 If running locally, skip step 2.
 
 # Testing the agent
-To test the performance of a trained agent run ```python3 test.py -f logs/```
+To test the performance of a trained agent run ```python3 test.py -f logs/ -tc 5```
+Output:
+```
+Performed 5 tests for seaquest.
+Mean: 1704.00
+Min: 1680.00
+Max: 1720.00
+Std: 14.97
+```
+
+## Generating gifs
+Gifs can be generated from stored network weights, for example a gif of the agent playing breakout can be generated with
+```
+python3 test.py -f pretrained/breakout/ -gn breakout
+```
+This may take a few minutes.
 
 # Pretrained models
 Pretrained models for some games can be found [here](pretrained).
